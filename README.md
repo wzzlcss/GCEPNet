@@ -14,7 +14,7 @@ We show that the real-valued system can be modeled as spectral signal convolutio
 |-- helper.py #utils functions
 ```
 
-## Performance comparison with existing SOTA (GEPNet)
+## Performance comparison with existing SOTA (GEPNet) for 64-QAM
 
 GCEPNet incorporates data-dependent attention scores into Chebyshev polynomial for powerful graph convolution with better generalization capacity.
 
