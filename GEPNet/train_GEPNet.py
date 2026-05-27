@@ -128,7 +128,7 @@ def generate_valid_data(batch_size, valid_NT_list, valid_snrdb_list):
         for snrdb in valid_snrdb_list[Nt]: 
             snr = 10**(snrdb/10.0)   
             H, y, x_label, init_feats, edge_weight, noise_sigma2 = generate_MIMO_data_batch_GEPNet(
-                Nt, Nr, args.k, args.train_batch_size, snr, snr, ill)      
+                Nt, Nr, args.k, args.valid_batch_size, snr, snr, ill)      
             data_dict[int(Nt)][snrdb] = (H, y, x_label, init_feats, edge_weight, noise_sigma2)
     return data_dict
 
